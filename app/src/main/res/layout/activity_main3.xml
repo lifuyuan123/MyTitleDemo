@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mytitledemo.Main3Activity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/al"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:minHeight="100dp"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                android:id="@+id/ctl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/textdemo_image"
+                        android:background="@drawable/timg"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <!-- 自己所需的要跟随滚动折叠的布局试图-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <View
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp"
+                         android:layout_weight="1" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="asdfasdfasfddasdfsafdsadfasdffffffasdfasdfa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    app:layout_collapseMode="pin"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- titlebar_view此控件为自定义的标题栏titlebar-->
+                    <View
+                       android:id="@+id/tv_titlebar"
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp" />
+
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/rv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    </LinearLayout>

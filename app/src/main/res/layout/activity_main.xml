@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.administrator.mytitledemo.MainActivity">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_1"
+        android:text="放大效果"
+        android:background="#aba9a9"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_2"
+        android:text="动画效果"
+        android:background="#aba9a9"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_3"
+        android:text="沉浸式效果"
+        android:background="#aba9a9"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_4"
+        android:text="显示隐藏头像"
+        android:background="#aba9a9"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+
+
+
+</LinearLayout>
